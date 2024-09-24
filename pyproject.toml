@@ -1,3 +1,48 @@
+[tool.poetry]
+name = "cdc-ai-agent-client"
+version = "1.0.0-beta"
+description = "A python client to interact with the crypto.com AI agent service"
+authors = ["Ric Arcifa <ricardo.arcifa@crypto.com>"]
+license = "MIT"
+keywords = ["agent", "blockchain", "crypto.com", "AI", "CDC"]
+readme = "README.md"
+homepage = "https://github.com/crypto-com/cdc-ai-agent-client-py"
+repository = "https://github.com/crypto-com/cdc-ai-agent-client-py"
+documentation = "https://github.com/crypto-com/cdc-ai-agent-client-py"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+requests = "^2.32.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.3"
+flake8 = "^7.1.1"
+black = "^24.8.0"
+isort = "^5.13.2"
+
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         
+    | \.git
+    | \.tox
+    | \.venv
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.scripts]
+cdc-ai-agent-client = "cdc_ai_agent_client.cli:main"
