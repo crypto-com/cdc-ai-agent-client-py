@@ -2,7 +2,7 @@
 
 The Crypto.com AI Agent Client.py is a Python library designed to facilitate easy and efficient interactions with the Crypto.com AI Agent Service API. This client library provides methods to send queries and fetch responses from the Crypto.com AI Agent Service seamlessly.
 
-![PyPI](https://img.shields.io/pypi/v/crypto_com_ai_agent_client)
+![PyPI](https://img.shields.io/pypi/v/crypto-com-ai-agent-client)
 
 ## Features
 
