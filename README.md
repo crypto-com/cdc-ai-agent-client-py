@@ -33,7 +33,7 @@ client = create_client({
         'apiKey': 'YOUR_OPEN_AI_API_KEY',
         'model': 'gpt-4o'  # Optional, defaults to 'gpt-4-turbo'
     },
-    'chainId': 25,  # e.g., for the Cronos EVM Mainnet
+    'chainId': 25,  # 25 for Cronos EVM Mainnet, 338 for Cronos EVM Testnet, 388 for Cronos ZkEVM Mainnet, 240 for Cronos ZkEVM Testnet
     'explorerKeys': {
         'cronosMainnetKey': 'CRONOS_MAINNET_API_KEY',
         'cronosTestnetKey': 'CRONOS_TESTNET_API_KEY',
@@ -72,7 +72,7 @@ send_query("What is the latest block?")
 - `openAI`: Dictionary containing OpenAI configuration
   - `apiKey`: Your OpenAI API key
   - `model`: (Optional) The model to use (defaults to 'gpt-4-turbo')
-- `chainId`: The ID of the blockchain network (25 for Cronos EVM Mainnet, 338 for Cronos EVM Testnet, 388 for Cronos ZkEVM Mainnet, 282 for Cronos ZkEVM Testnet)
+- `chainId`: The ID of the blockchain network (25 for Cronos EVM Mainnet, 338 for Cronos EVM Testnet, 388 for Cronos ZkEVM Mainnet, 240 for Cronos ZkEVM Testnet)
 - `explorerKeys`: Dictionary of API keys for different explorers, ensure that the keys match the chainId
   - `cronosMainnetKey`: (Optional) API key for Cronos Mainnet
   - `cronosTestnetKey`: (Optional) API key for Cronos Testnet
