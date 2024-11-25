@@ -1,8 +1,8 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="crypto-com-ai-agent-client",
-    version="1.0.4",
+    version="1.0.5",
     description="Python client for Crypto.com AI Agent Service",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
